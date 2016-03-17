@@ -1,0 +1,16 @@
+% imwrite(quilt_random(imread('samples/bricks_small.jpg'), [390, 390], 65), 'output/bricks_random.jpg');
+% imwrite(quilt_simple(imread('samples/bricks_small.jpg'), [390, 390], 77, 15, 0.0001), 'output/bricks_simple.jpg');
+imwrite(quilt_cut(imread('samples/bricks_small.jpg'), [390, 390], 77, 15, 0.0001), 'output/bricks_cut.jpg');
+% imwrite(quilt_simple(imread('samples/text_small.jpg'), [390, 390], 35, 15, 0.01), 'output/text_simple.jpg');
+% imwrite(quilt_simple(imread('samples/white_small.jpg'), [200, 200], 35, 15, 0.01), 'output/white_simple.jpg');
+% imwrite(quilt_cut(imread('samples/white_small.jpg'), [300, 300], 45, 15, 0.5), 'output/white_cut.jpg');
+% imwrite(quilt_cut(imread('samples/text_small.jpg'), [300, 300], 45, 15, 0.0001), 'output/text_cut.jpg');
+% imwrite(quilt_cut(imread('samples/cherries.jpg'), [300, 300], 45, 15, 0.01), 'output/cherries_cut.jpg');
+% imwrite(quilt_cut(imread('samples/forest.jpg'), [300, 300], 45, 15, 0.01), 'output/forest_cut.jpg');
+% imwrite(photomosaic(imread('samples/sketch.tiff'), imread('samples/allen.jpg'), 23, 3, 0.0005, 0.2), 'output/face.jpg');
+% imwrite(quilt_simple(imread('samples/sketch.tiff'), size(imread('samples/feynman.tiff')), 31, 5, 0.0001), 'output/feynman_quilt.jpg');
+% imwrite(texture_transfer(imread('samples/toast.jpg'), imresize(imread('samples/feynman.tiff'), 1.5), 33, 7, 0.005, 0.2), 'output/face.jpg');
+% imwrite(photomosaic(imread('samples/toast.jpg'), imread('samples/allen.jpg'), 17, 5, 0.01, 0.2), 'output/face.jpg');
+% imwrite(texture_transfer(imread('samples/sketch.tiff'), imread('samples/feynman.tiff'), 17, 5, 0.0001, 0.5), 'output/feynman.jpg');
+% imwrite(feather_overlay('samples/toast_frame.jpg', 'output/allen_face.jpg', 1, 7, 10), 'output/toast_face.jpg');
+% iterative_transfer(imread('samples/toast.jpg'), imread('samples/allen.jpg'), 21, 5, 0.01, 3);
